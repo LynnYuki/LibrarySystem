@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C57B7364-1B74-4853-9701-C41B217D4E83}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>book</RootNamespace>
+    <AssemblyName>book</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addbook.Designer.cs">
+      <DependentUpon>addbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminreturnbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminreturnbook.Designer.cs">
+      <DependentUpon>adminreturnbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminsearchbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminsearchbook.Designer.cs">
+      <DependentUpon>adminsearchbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="booksborrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="booksborrow.Designer.cs">
+      <DependentUpon>booksborrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="borrowsearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="borrowsearch.Designer.cs">
+      <DependentUpon>borrowsearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dbconnect.cs" />
+    <Compile Include="addreader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addreader.designer.cs">
+      <DependentUpon>addreader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deletereader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deletereader.designer.cs">
+      <DependentUpon>deletereader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="readermanage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="readermanage.Designer.cs">
+      <DependentUpon>readermanage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="readerserchbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="readerserchbook.Designer.cs">
+      <DependentUpon>readerserchbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="readerreturnbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="readerreturnbook.Designer.cs">
+      <DependentUpon>readerreturnbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="publisher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="publisher.Designer.cs">
+      <DependentUpon>publisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reader.Designer.cs">
+      <DependentUpon>reader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="addbook.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>addbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addreader.resx">
+      <DependentUpon>addreader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminreturnbook.resx">
+      <DependentUpon>adminreturnbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminsearchbook.resx">
+      <DependentUpon>adminsearchbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="booksborrow.resx">
+      <DependentUpon>booksborrow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="borrowsearch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>borrowsearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deletereader.resx">
+      <DependentUpon>deletereader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="readermanage.resx">
+      <DependentUpon>readermanage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="readerserchbook.resx">
+      <DependentUpon>readerserchbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="readerreturnbook.resx">
+      <DependentUpon>readerreturnbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="publisher.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>publisher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reader.resx">
+      <DependentUpon>reader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="readersearch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>readersearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="readerzhuce.resx">
+      <DependentUpon>readerzhuce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stusearch.resx">
+      <DependentUpon>stusearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="readersearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="readersearch.Designer.cs">
+      <DependentUpon>readersearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="readerzhuce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="readerzhuce.Designer.cs">
+      <DependentUpon>readerzhuce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stusearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stusearch.Designer.cs">
+      <DependentUpon>stusearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userhelper.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

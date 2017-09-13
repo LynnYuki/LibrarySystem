@@ -1,0 +1,2 @@
+C:\新建文件夹\程序及源代码\book\obj\Debug\book.exe
+C:\新建文件夹\程序及源代码\book\obj\Debug\book.pdb
