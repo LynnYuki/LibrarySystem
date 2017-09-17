@@ -4,7 +4,7 @@
 
 
 <br />
-# screenshot
+# Screenshot
 <img src="/pictures/1.png" width = "534" height = "461" />
 <br />
 <img src="/pictures/2.png" width = "795" height = "652" />
@@ -21,7 +21,8 @@
 <br />
 <img src="/pictures/8.png" width = "874" height = "512" />
 <br />
+
 # 项目用到的工具
-SQLServer
+SQLServer</br>
 VisualStudio
 
